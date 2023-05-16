@@ -22,6 +22,19 @@ Make example for this keyboard (after setting up your build environment):
 ### Burn Bootloader with dfu-util
 
     make goni:default:dfu-util
+    
+### build ardux firmware (artsey)
+1. clone hsgw/qmk-ardux
+2. checkout `5z6p` branch
+3. setup and run docker (vscode dev container recommend)
+4. go to `qmk_firmware/users/ardux`
+5. run 
+```
+rm -rf ../../.build/* && qmk -v compile \
+    -e ARDUX_SIZE=std \
+    -e ARDUX_HAND=left \
+    layout/dm9records_goni.json
+```
 
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).

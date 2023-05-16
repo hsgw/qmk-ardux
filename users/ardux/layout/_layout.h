@@ -70,6 +70,9 @@
 #ifdef KEYBOARD_splitkb_kyria_rev2
 #include "boards/splitkb_kyria_rev2.h"
 #endif
+#ifdef KEYBOARD_dm9records_goni
+#include "boards/dm9records_goni.h"
+#endif
 
 // //////////
 // Include layers last so all overrides and ids are set prior to processing
