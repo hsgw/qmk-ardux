@@ -1,0 +1,67 @@
+{
+    "keyboard_name": "goni",
+    "manufacturer": "Dm9Records",
+    "maintainer": "hsgw",
+    "usb": {
+        "pid": "0xFEED",
+        "vid": "0x5210",
+        "device_version": "0.0.1"
+    },
+    "processor": "STM32F042",
+    "bootloader": "stm32-dfu",
+    "board": "GENERIC_STM32_F042X6",
+    "matrix_pins": {
+        "direct": [
+            [
+                "A14",
+                "F0",
+                "F1",
+                "A0"
+            ],
+            [
+                "A1",
+                "A2",
+                "A3",
+                "A4"
+            ]
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 1,
+                    "y": 0
+                },
+                {
+                    "x": 2,
+                    "y": 0
+                },
+                {
+                    "x": 3,
+                    "y": 0
+                },
+                {
+                    "x": 0,
+                    "y": 1
+                },
+                {
+                    "x": 1,
+                    "y": 1
+                },
+                {
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "x": 3,
+                    "y": 1
+                }
+            ]
+        }
+    }
+}
